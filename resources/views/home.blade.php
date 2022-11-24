@@ -5,7 +5,7 @@
         <div class="row">
             @foreach ($data as $d)
             <div class="col-3">
-                <div class="card" style="width: 18rem;">
+                <div class="card mb-4" style="width: 18rem;">
                     <img src="{{asset('storage/' .$d->foto)}}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{{$d->judul}}</h5>
