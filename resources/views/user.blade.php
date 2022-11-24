@@ -61,7 +61,6 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius: 50px;">Tutup</button>
-                            {{-- <button type="button" class="btn btn-primary">Save changes</button> --}}
                             <button type="submit" class="btn btn-outline-success" style="border-radius: 50px;">Ubah</button>
                         </div>
                     </form>
@@ -105,7 +104,6 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius: 50px;">Tutup</button>
-                {{-- <button type="button" class="btn btn-primary">Save changes</button> --}}
                 <button type="submit" class="btn btn-outline-success" style="border-radius: 50px;">Simpan</button>
             </div>
         </form>

@@ -13,6 +13,7 @@ class DashController extends Controller
      */
     public function index()
     {
+        //menampilkan halaman dashboard
         return view('dashboard');
     }
 
@@ -34,6 +35,7 @@ class DashController extends Controller
      */
     public function store(Request $request)
     {
+        //mendapatkan request dari form dan memunculkan ke halaman dashboard
         $dt = new konsultasi($request->tinggi, $request->berat, $request->tahun);
         $data = [
             'nama' => $request->nama,
@@ -134,6 +136,7 @@ class hitung {
 class konsultasi extends hitung {
     public function stts()
     {
+        //menentukan status telah dewasa atau belum
         $stts = $this->hitungUmur();
         if ($stts >= 17) {
             return "Dewasa";
@@ -144,6 +147,7 @@ class konsultasi extends hitung {
 
     public function konsul()
     {
+        //menentukan apakah peserta bisa mendapatkan konsultasi gratis
         if ($this->stts() == 'Dewasa' && $this->sttb() == 'Obesitas') {
             return "Anda bisa mendapatkan Konsultasi gratis.";
         }else {

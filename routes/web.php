@@ -17,10 +17,6 @@ use App\Http\Controllers\KategoriController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::middleware(['auth'])->group(function () {
     Route::resource('kategori', KategoriController::class);
     Route::get('delkat/{kategori}', [KategoriController::class, 'destroy']);
@@ -43,5 +39,3 @@ Route::get('/template', function () {
 Route::get('/', [ArtikelController::class, 'home']);
 
 Auth::routes();
-
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
